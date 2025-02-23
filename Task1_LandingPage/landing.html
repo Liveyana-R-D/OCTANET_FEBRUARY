@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Majestic Mountains</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #6a0dad, #8a2be2, #9932cc);
+            color: white;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 50px 20px;
+            position: relative;
+            overflow: hidden;
+            background-image: url('m2.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        h1 {
+            font-size: 3em;
+            animation: fadeIn 2s ease-in-out;
+        }
+        p {
+            font-size: 1.2em;
+            animation: slideIn 2s ease-in-out;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background: #8a2be2;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #6a0dad;
+        }
+        #services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 50px 20px;
+        }
+        .service {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+            width: 30%;
+            min-width: 280px;
+            opacity: 0;
+            animation: fadeInUp 1.5s forwards;
+        }
+        .service img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        footer {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+            p {
+                font-size: 1em;
+            }
+            #services {
+                flex-direction: column;
+                align-items: center;
+            }
+            .service {
+                width: 80%;
+            }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes fadeInUp {
+            from { transform: translateY(30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="fade-in">Majestic Mountains</h1>
+        <p class="slide-in">Explore the beauty of nature's giants</p>
+        <a href="#services" class="btn">Discover More</a>
+    </header>
+    
+    <section id="services">
+        <div class="service fade-in">
+            <img src="m6.jpg" alt="Mountain View">
+            <h2>Hiking Adventures</h2>
+            <p>Experience breathtaking trails and scenic landscapes.</p>
+        </div>
+        <div class="service fade-in">
+            <img src="m5.jpg" alt="Sunset Over Mountains">
+            <h2>Sunset Views</h2>
+            <p>Witness stunning sunsets from mountain peaks.</p>
+        </div>
+        <div class="service fade-in">
+            <img src="m1.jpg" alt="Camping in the Mountains">
+            <h2>Camping Under Stars</h2>
+            <p>Enjoy a night under the starry sky amidst mountains.</p>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Mountain Explorer. All rights reserved.</p>
+    </footer>
+</body>
+</html>
