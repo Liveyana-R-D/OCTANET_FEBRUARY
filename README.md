@@ -16,6 +16,16 @@
 - 🔗 Frontend (React): [https://starbucks-frontend-rust.vercel.app](https://starbucks-frontend-rust.vercel.app)
 - 🔗 Backend (Express + MongoDB): [https://starbucks-backend-4fnv.onrender.com](https://starbucks-backend-4fnv.onrender.com)
 
+### Backend API Endpoint
+
+You can use the following API endpoint to access the contact form data:
+
+- **POST**: [https://starbucks-backend-4fnv.onrender.com/api/contact](https://starbucks-backend-4fnv.onrender.com/api/contact)  
+  Send contact form data (name, email, message)
+
+- **GET**: [https://starbucks-backend-4fnv.onrender.com/api/contact](https://starbucks-backend-4fnv.onrender.com/api/contact)  
+  View all submitted messages (for testing/admin)
+
 📁 Project Structure:
 - `Task3_CloningStarbucks/client` → Frontend (React)
 - `Task3_CloningStarbucks/server` → Backend (Node.js, Express)
