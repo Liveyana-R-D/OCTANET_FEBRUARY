@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import axios from "axios";
 import "./App.css";
 
+
 function App() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
 
@@ -13,13 +14,17 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:5000/api/contact", form);
+      const res = await axios.post("https://starbucks-backend-4fnv.onrender.com/api/contact", form);
+
       alert(res.data.message);
       setForm({ name: "", email: "", message: "" });
     } catch (error) {
       alert("Error submitting message");
     }
   };
+
+
+
 
   const menuItems = [
     {
