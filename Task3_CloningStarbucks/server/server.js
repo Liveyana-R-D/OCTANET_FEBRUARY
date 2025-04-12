@@ -25,4 +25,8 @@ app.post("/api/contact", async (req, res) => {
 });
 
 const PORT = process.env.PORT || 5000;
+app.get("/", (req, res) => {
+  res.send("✨ Starbucks backend is live!");
+});
+
 app.listen(PORT, () => console.log(`Server running on ${PORT}`));
