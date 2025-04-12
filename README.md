@@ -11,5 +11,11 @@
 ### 💻 Source Code
 [View the code on GitHub](https://github.com/Liveyana-R-D/task2-todo-list)
 
+## 🚀 Live Project - Starbucks Clone (MERN Stack)
 
-https://starbucks-backend-4fnv.onrender.com
+- 🔗 Frontend (React): [https://starbucks-frontend-rust.vercel.app](https://starbucks-frontend-rust.vercel.app)
+- 🔗 Backend (Express + MongoDB): [https://starbucks-backend-4fnv.onrender.com](https://starbucks-backend-4fnv.onrender.com)
+
+📁 Project Structure:
+- `Task3_CloningStarbucks/client` → Frontend (React)
+- `Task3_CloningStarbucks/server` → Backend (Node.js, Express)
