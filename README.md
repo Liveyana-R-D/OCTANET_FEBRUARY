@@ -20,11 +20,8 @@
 
 You can use the following API endpoint to access the contact form data:
 
-- **POST**: [https://starbucks-backend-4fnv.onrender.com/api/contact](https://starbucks-backend-4fnv.onrender.com/api/contact)  
-  Send contact form data (name, email, message)
-
-- **GET**: [https://starbucks-backend-4fnv.onrender.com/api/contact](https://starbucks-backend-4fnv.onrender.com/api/contact)  
-  View all submitted messages (for testing/admin)
+-  [https://starbucks-backend-4fnv.onrender.com/api/contact](https://starbucks-backend-4fnv.onrender.com/api/contact)  
+   View all submitted messages (name, email, message) - admin
 
 📁 Project Structure:
 - `Task3_CloningStarbucks/client` → Frontend (React)
