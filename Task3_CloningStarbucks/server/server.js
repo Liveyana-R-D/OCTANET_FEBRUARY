@@ -4,7 +4,6 @@ const cors = require("cors");
 const dotenv = require("dotenv");
 const Contact = require("./models/Contact");
 
-const cors = require("cors");
 
 app.use(cors({
   origin: "https://starbucks-frontend-rust.vercel.app",  // This is the URL of your frontend (Vercel)
