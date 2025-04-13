@@ -13,20 +13,14 @@ function App() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-	const apiUrl = process.env.NODE_ENV === 'development' ? 'http://localhost:5000/api/contact' // for local development : 'https://starbucks-backend-4fnv.onrender.com/api/contact'; //for production render
     try {
-      const res = await axios.post(apiUrl, form);
-
-	
+      const res = await axios.post("http://localhost:5000/api/contact", form);	
       alert(res.data.message);
       setForm({ name: "", email: "", message: "" });
     } catch (error) {
       alert("Error submitting message");
     }
   };
-
-//const res = await axios.post("http://localhost:5000/api/contact", form);
 
 
   const menuItems = [
